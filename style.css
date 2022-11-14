@@ -1,0 +1,244 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  margin: auto;
+  text-align: center;
+}
+/* main container  */
+.container{
+  height: 100vh;
+  width: 100%;
+  background: url('https://cdn.wallpapersafari.com/81/73/WBO3Ml.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(8px);
+  background-color: black;
+}
+/* title styling  */
+#title{
+  color: red;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3.1rem;
+  padding: 10px;
+}
+/* search bar  */
+#search-container{
+  position: relative;
+  display: inline-block;
+  padding-top: 8%;
+}
+
+/* search items  */
+#search{
+  width: 420px;
+  padding: 10px 15px;
+  margin-top: 2rem;
+  color: red;
+  border: 1px solid red;
+  background-color: transparent;
+  font-size: 1.7rem;
+  letter-spacing: 0.05rem;
+  border-radius: 15px;
+}
+
+/* search bar clicked  */
+#search:focus{
+  outline: none;
+}
+
+/* search result container  */
+#search-results-container{
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  top: 100%;
+  left: 0;
+  right: 0;
+  max-height: 400px;
+  overflow-y: scroll;
+}
+/* search-item results  */
+#search-results-container div {
+  padding: 10px;
+  cursor: pointer;
+  background: #000;
+  color: red;
+  scroll-behavior: none;
+  border-bottom: 1px solid #d4d4d4; 
+}
+
+/* search a item  */
+.search-item{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 1.5rem;
+}
+
+/* super hero container  */
+#super-hero-container{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+  padding-top: 50px;
+  background: url('https://cdn.wallpapersafari.com/39/64/yRLqgo.jpg');
+  background-size: cover;
+  color: red;
+}
+.about{
+  width: 70%;
+  display: flex;
+  /* border: 2px solid red; */
+}
+/* image of hero div */
+#image{
+  width: 350px;
+  height: 250px;
+}
+/* image  */
+#img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+#left{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  width: 30%;
+}
+
+#main{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 25px;
+  width: 70%;
+}
+
+#hero-name{
+  font-size: 2.4rem;
+  font-weight: bold;
+  padding: 10px 0;
+  text-decoration: underline;
+}
+
+#right{
+  display: flex;
+  text-align: left;
+  justify-content: space-around;
+  color: #d4d4d4;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  /* border: 2px solid red; */
+}
+
+#right div{
+  padding-top: 15px;
+}
+
+.heading{
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+#aliases{
+  max-width: 250px;
+  max-height: 200px;
+}
+.fav-heros{
+  height: 100vh;
+  width: 100%;
+  background: url('https://c4.wallpaperflare.com/wallpaper/584/718/481/spider-man-marvel-comics-black-background-superhero-wallpaper-thumb.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow-y: scroll;
+}
+/* my fav heros  */
+#favourite-heros{
+  display: flex;
+  width: 85%;
+  margin: auto;
+  min-width: 480px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: aliceblue;
+}
+
+.hero-details{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 10px;
+}
+
+.hero-img-container{
+  height: 270px;
+  width: 210px;
+}
+
+/* fav hero image  */
+.hero-img-container img{
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+/* about fav. hero  */
+.info{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 35px;
+  margin-top: -35px;
+}
+
+.hero-name{
+  font-size: 1.5rem;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.remove-fav{
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #5CC7B2;
+  padding: 15px;
+  color: #FFFFFF;
+  border-radius: 5px;
+}
+
+.remove-fav:hover{
+  background-color: #C75C71;
+  cursor: pointer;
+}
+/* styling the nav menubar */
+.nav{
+  width: 95%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 15px 0 0;
+}
+
+.nav a{
+  text-decoration: none;
+  color: red;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
